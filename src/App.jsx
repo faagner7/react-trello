@@ -1,10 +1,10 @@
 import React from 'react'
-import Fagner from './Fagner'
+import Trello from './Trello'
 
 function App() {
   return (
     <div className='App'>
-      <Fagner />
+      <Trello />
     </div>
   )
 }

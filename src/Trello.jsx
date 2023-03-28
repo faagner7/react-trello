@@ -5,7 +5,7 @@ import Board from 'react-trello'
 
 import data from './data'
 
-function Fagner() {
+function Trello() {
   const [state, setState] = useState({ boardData: data })
 
   const handleDragStart = (cardId, laneId) => {
@@ -44,4 +44,4 @@ function Fagner() {
   )
 }
 
-export default Fagner
+export default Trello
