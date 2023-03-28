@@ -7,6 +7,7 @@ import data from './data'
 
 function Trello() {
   const [state, setState] = useState({ boardData: data })
+  console.log('state', state)
 
   const handleDragStart = (cardId, laneId) => {
     console.log('drag started')
@@ -22,7 +23,9 @@ function Trello() {
   }
 
   const setEventBus = (eventBus) => {
-    setState({ eventBus })
+    setState((prevState) => {
+      return { ...prevState, eventBus }
+    })
   }
 
   return (
